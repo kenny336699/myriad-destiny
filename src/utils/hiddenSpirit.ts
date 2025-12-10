@@ -38,8 +38,8 @@ function getPureHexagramLines(palaceName: string) {
 
   // 2. 取得納甲
   // 八純卦上下卦相同，直接切分
-  const lowerCode = code.slice(0, 3); // 實際上八純卦前3碼與後3碼邏輯固定
-  const upperCode = code.slice(3, 6);
+  const lowerCode = code.slice(0, 3).split('').join(','); // 轉換為 "1,0,0" 格式
+  const upperCode = code.slice(3, 6).split('').join(','); // 轉換為 "1,0,0" 格式
 
   // 查表 (這裡使用 Type Assertion 避免 TS 索引錯誤)
   const lowerNajia = NAJIA_TABLE[lowerCode as keyof typeof NAJIA_TABLE]?.inner || [];
