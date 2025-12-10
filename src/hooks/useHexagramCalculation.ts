@@ -85,6 +85,7 @@ export function useHexagramCalculation({
               name: line.relation,
               stemBranch: line.najia.stem + line.najia.branch,
               element: line.najia.element,
+              hidden: line.hidden, // 保留伏神資料
             },
             transformed: line.transformed,
           };

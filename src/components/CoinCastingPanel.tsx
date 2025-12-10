@@ -162,17 +162,6 @@ export function CoinCastingPanel({
             </>
           )}
         </div>
-
-        {/* 說明 */}
-        <div className="mt-8 p-4 bg-blue-50 rounded-lg border border-blue-200 text-sm text-blue-900">
-          <p className="font-bold mb-2">卦象對應規則：</p>
-          <ul className="space-y-1 list-disc list-inside">
-            <li>3個背 = 3</li>
-            <li>2個背 = 2</li>
-            <li>1個背 = 1</li>
-            <li>0個背 = 0</li>
-          </ul>
-        </div>
       </div>
     </div>
   );
