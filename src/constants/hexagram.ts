@@ -1,0 +1,30 @@
+import type { YaoOption } from '../types/hexagram';
+
+// 爻位輸入選項
+export const YAO_OPTIONS: YaoOption[] = [
+  { value: 2, label: '2 - 少陽 ▅▅▅▅▅ (靜)' },
+  { value: 1, label: '1 - 少陰 ▅▅　▅▅ (靜)' },
+  { value: 0, label: '0 - 老陽 ▅▅▅▅▅ (動 O)' },
+  { value: 3, label: '3 - 老陰 ▅▅　▅▅ (動 X)' },
+];
+
+// 爻位標籤
+export const YAO_LABELS = ['初爻', '2 爻', '3 爻', '4 爻', '5 爻', '上爻'];
+
+// 卦類型對應文字
+export const GUA_TYPE_MAP: Record<number, string> = {
+  1: '一世卦',
+  2: '二世卦',
+  3: '三世卦',
+  4: '四世卦',
+  5: '五世卦',
+  6: '八純卦',
+  7: '遊魂卦',
+  8: '歸魂卦',
+};
+
+// 複製提示詞的持續時間 (毫秒)
+export const COPY_TIMEOUT_MS = 3000;
+
+// 預設爻值 (全靜爻)
+export const DEFAULT_YAO_VALUES = [1, 1, 1, 1, 1, 1];
